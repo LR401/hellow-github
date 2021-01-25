@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        对于文本域的实用
+     -->
+    <form>
+        名：
+        <input type="text" name="firstname">
+        <br>
+        姓：
+        <input type="text" name="lastname">
+    </form>
+    <br>
+    <!-- 
+        对于密码域的实用
+     -->
+     <form>
+         用户：
+         <input type="text" name="user">
+         <br>
+         密码：
+         <input type="password" name="password">
+     </form>
+     <p>请注意，当您输入密码时，浏览器会使用项目符号也代替这些字符</p>
+     <br>
+     <!-- 
+         对于复选框的实用
+      -->
+      <form>
+          我喜欢自行车：
+          <input type="checkbox" name="Bike">
+          <br>
+          我喜欢小汽车：
+          <input type="checkbox" name="Car">
+      </form>
+      <br>
+      <!-- 
+          对于单选按钮的实用
+
+          注意要标明 name 以及 valu 的值，才可达到单选的情况
+       -->
+      <form>
+          男性：
+          <input type="radio" check="checked" name="Sex" value="male">
+          <br>
+          女性：
+          <input type="radio" name="Sex" value="female">
+          <br>
+          未知：
+          <input type="radio" name="Sex" value="None">
+          
+      </form>
+      <br>
+      <!-- 
+          对于简单下拉列表的实用
+       -->
+       <form>
+           <select name="objection">
+               <option value="Chinese">语文</option>
+               <option value="Math">数学</option>
+               <option value="English">英语</option>
+           </select>
+       </form>
+       <form>
+        <select name="objection">
+            <option value="">数字与遥感地球</option>
+            <option value="">测绘学概论</option>
+            <option value="">c#</option>
+        </select>
+    </form>
+    <br>
+    <!-- 
+        该例中，selected所表示的含义是预先选定的首选项
+     -->
+    <form>
+        <select name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat" selected="selected">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+    </form>
+    <br>
+    <!-- 
+        对于创建按钮的实用
+     -->
+    <form>
+        <input type="button" value="是男人就点这里！">
+    </form>
+    <br>
+    <!-- 
+        围绕数据的表单
+     -->
+     <form>
+         <fieldset>
+             <legend>个人信息</legend>
+             姓名：<input type="text"> <br>
+             身高：<input type="text"> <br>
+             体重：<input type="text"> <br>
+             兴趣：<input type="text"> <br>
+         </fieldset>
+     </form>
+     <br>
+     <!-- 
+         含有输入框以及提交按钮的表单
+      -->
+    <form action="./000.asp">
+        姓名：<br>
+        <input type="text" value="Mickey mouse"> <br>
+        爱好：<br>
+        <input type="text" value="html"><br>
+        性别：<br>
+        <select name="Sex">
+            <option value="male">男</option>
+            <option value="female">女</option>
+        </select>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

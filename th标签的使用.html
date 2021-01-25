@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        创建表格
+     -->
+    <h4>表格（一列）</h4>
+    <table border="1">
+        <tr>
+            <td>100</td>
+        </tr>
+    </table>
+    <h4>一行三列</h4>
+    <table border="1">
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+    </table>
+    <h4>两行两列</h4>
+    <table border="1">
+        <tr>
+            <td>100</td>
+            <td>200</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>400</td>
+            <td>500</td>
+        </tr>
+    </table>
+    <br>
+    <!-- 
+        带有th标签的表格
+        th标签对于文本有一个加粗的效果
+     -->
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <th>电话</th>
+            <th>性别</th>
+        </tr>
+        <tr>
+            <td>李航</td>
+            <td>10000100000</td>
+            <td>男</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <th>姓名</th>
+            <td>lihang</td>
+        </tr>
+        <tr>
+            <th>电话</th>
+            <td>100001000000</td>
+        </tr>
+        <tr>
+            <th>性别</th>
+            <td>男</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <td>some text</td>
+            <td>some text</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>some text</td>
+        </tr>
+    </table>
+    <br>
+    <!-- 
+        使用 caption 标签为表格添加标题
+     -->
+     <table border="6">
+        <caption>我的目标</caption>
+        <tr>
+            <th>高等数学</th>
+            <th>大学英语</th>
+            <th>大学物理</th>
+        </tr>
+        <tr>
+            <td>90</td>
+            <td>90</td>
+            <td>95</td>
+        </tr>
+     </table>
+     <br>
+     <!-- 
+         可以横跨多列多行的表格
+      -->
+    <table border="3">
+        <tr>
+            <th>姓名</th>
+            <th colspan="2">电话</th>
+        </tr>
+        <tr>
+            <td>Bill</td>
+            <td>555 000 555</td>
+            <td>555 777 888</td>
+        </tr>
+    </table>
+    <br>
+    <table border="3">
+        <tr>
+            <th>姓名</th>
+            <td>Bill</td>
+        </tr>
+        <tr>
+            <th rowspan="2">电话</th>
+            <td>555000555</td>
+        </tr>
+        <tr>
+            <td>555777999</td>
+        </tr>
+    </table>
+    <br>
+    <!-- 
+        表格中可以嵌套多种内容
+     -->
+    <table border="1">
+        <tr>
+            <td>
+                <p>此处有一个段落</p>
+                <p>此处有一个段落</p>
+            </td>
+            <td>
+                <p>表格中的表格</p>
+                <table border="1">
+                    
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>D</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>表格中包含一个列表</p>
+                <ul>
+                    <li>苹果</li>
+                    <li>香蕉</li>
+                    <li>菠萝</li>
+                </ul>
+            </td>
+            <td>
+                Hello
+            </td>
+        </tr>
+    </table>
+    <br>
+    <!-- 
+        使用cellpadding的属值对
+     -->
+    <table border="1" cellpadding="10">
+        <tr>
+            <td>First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <td>First</td>
+            <td>Row</td>
+        </tr>
+        <tr>
+            <td>Second</td>
+            <td>Row</td>
+        </tr>
+    </table>
+</body>
+</html>
