@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        有无 cellspacing（单元格间距） 的区别
+     -->
+    <h4>没有cellspacing</h4>
+    <table border="1">
+        <tr>
+            <th>姓</th>
+            <th>名</th>
+        </tr>
+        <tr>
+            <td>李</td>
+            <td>航</td>
+        </tr>
+    </table>
+    <h4>有cellspacing</h4>
+    <table border="1" cellspacing="10">
+        <tr>
+            <th>姓</th>
+            <th>名</th>
+        </tr>
+        <tr>
+            <td>姓</td>
+            <td>名</td>
+        </tr>
+    </table>
+    <br>
+    <!-- 
+        设置表格的背景颜色或更改背景
+     -->
+    <table border="1" bgcolor="yellow">
+        <tr>
+            <td>100</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>400</td>
+        </tr>
+    </table>
+    <br>
+    <table border="5" background="./图片/musedash.png" cellpadding="100" cellspacing="100">
+        <tr>
+            <td>100</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>400</td>
+        </tr>
+    </table>
+    <br>
+    <!-- 
+        使用align标签对单元格内的内容进行对齐操作
+     -->
+    <table width="400" border="3">
+        <tr>
+            <th align="left">消费项目</th>
+            <th align="right">一月</th>
+            <th align="right">六月</th>
+        </tr>
+        <tr>
+            <td align="left">饮食</td>
+            <td align="right">2010.40</td>
+            <td align="right">1058.60</td>
+        </tr>
+    </table>
+</body>
+</html>
