@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            id选择器：
+                作用：根据元素的id属性值选定一个元素
+                语法：#id属性值{}
+         */
+        #red{
+            color: red;
+            font-size: 30px;
+        }
+        /* 
+        id选择器一般只能选中一个元素，不能重复使用
+        
+        class选择器（类选择器）：
+            可以选中一组元素
+            语法：.class属性值{}
+         */
+        .blue{
+            color: blue;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <p>这是一个段落</p>
+    <p>这是一个段落</p>
+    <p>这是一个段落</p>
+    <p id="red">这是一个段落</p>
+    <p>这是一个段落</p>
+    <p class="blue">这是一个段落</p>
+    <p class="blue">这是一个段落</p>
+</body>
+</html>
