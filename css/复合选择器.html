@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red; 
+        }
+        /* 
+            交集选择器：顾名思义需要同时满足多个条件
+         */
+        div.red{
+            font-size: 30px;
+        }
+        p.red{
+            font-size: 40px;
+        }
+        /* 
+            并集选择器
+         */
+        span, h1{
+                color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">我是div</div>
+    <p class="red" align="center">我是p元素</p>
+    <span>我是span</span>
+    <h1>标题</h1>
+</body>
+</html>
