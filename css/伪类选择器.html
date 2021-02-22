@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+            伪类选择器：选中一些特殊的元素
+                一般用法：
+                        :first-child  表示选中第一个子元素
+                        :last-child   表示选中最后一个子元素
+                        :nth-child()  表示选中特殊的子元素
+                            （）内一般有：n 表示选中0到正无穷的元素 n的范围是0到正无穷
+                                        2n或even 表示选中偶数的元素
+                                        2n+1或odd 表示选中奇数的元素
+
+                        :first-of-type 表示选中同类型的第一个子元素
+                        :last-of-type  表示选中同类型的最后一个子元素
+                        :nth-last-child()  与上述类似
+
+                        :not() 简而言之就是除了的意思 （）内与上述类似
+
+
+         */
+        ul>li:first-of-type{
+            color: orangered;
+        }
+        ul>li:last-of-type{
+            color: orchid;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <span>span元素</span>
+        <li>第0个</li>
+        <li>第1个</li>
+        <li>第2个</li>
+        <li>第3个</li>
+        <li>第4个</li>
+        <li>第5个</li>
+    </ul>
+
+
+</body>
+</html>

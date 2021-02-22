@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            属性选择器：
+                    基本语法：p[属性名=属性值]
+                        其中：
+                        p[属性名=属性值]表示选中p中的属性名叫做属性值的标签
+                        p[属性名$=属性值]表示选中p中的以该属性值结尾的标签
+                        p[属性名^=属性值]表示选中p中的以该属性值开头的标签
+                        p[属性名*=属性值]表示选中p中的含有该属性值的标签
+                        
+                        
+         */
+        p[title=aaabcdf]{
+            color: orange;
+        }
+        p[title$=abc]{
+            color: palegreen;
+        }
+        p[title^=abc]{
+            color: peru;
+        }
+        p[title*=k]{
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <p title="aaabcdf">望远烬</p>
+    <p title="helloabc">望远烬</p>
+    <p title="abchello">望远烬</p>
+    <p title="asask">望远烬</p>
+    <p title="sdakgrf">望远烬</p>
+    <p title="ksaf">望远烬</p>
+</body>
+</html>
