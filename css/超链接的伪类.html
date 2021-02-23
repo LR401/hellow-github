@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            专用于超链接中的伪类有两个
+                1.：link 标签表示为选择过的超链接（实际上应该是正常的超链接）
+                2.：visited 标签表示选择过的超链接，且只能改变超链接的颜色而无法改变背景或是字体
+
+         */
+         a:link{
+             color: peru;
+             font-size: 50px;
+         }
+         a:visited{
+             color: red;
+         }
+         /* 
+            不仅仅可以用到超链接中的两个伪类：
+                1.：hover 表示选择鼠标移入后的状态
+                2.：active 表示鼠标点击时的状态
+          */
+          a:hover{
+              color: yellowgreen;
+              font-size: 70px;
+          }
+          a:active:{
+              color: aqua;
+          }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">Baidu</a>
+    <br><br>
+    <a href="https://www.baidu123.com">Baidu</a>
+</body>
+</html>
