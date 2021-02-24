@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            伪元素选择器
+            伪元素表示页面中并不真实存在的元素（一些特殊位置）
+                -::first-letter 表示元素标签中的第一个字母
+                 ::first-line 表示元素标签中的第一行
+                 ::selection 表示鼠标选中的元素
+
+                 ::before 表示一个元素的开始
+                 ::after 表示一个元素的结束
+                        -需要使用conten标签来显示内容
+                        -并且由此标签显示出的内容无法被选中
+         */
+         p::first-letter{
+             font-size: 50px;
+             color: red;
+         }
+         p::first-line{
+             color: sandybrown;
+         }
+         p::selection{
+             color: yellowgreen;
+         }
+         div::before{
+             content: 'abc';
+             color: red;
+         }
+         div::after{
+             content: 'abc';
+             color: seagreen;
+         }
+
+    </style>
+</head>
+<body>
+    <div>李清照出生于书香门第</div>
+    <p>李清照出生于书香门第，早期生活优裕，其父李格非藏书甚富，她小时候就在良好的家庭环境中打下文学基础。出嫁后与丈夫赵明诚共同致力于书画金石的搜集整理。金兵入据中原时，流寓南方，境遇孤苦。所作词，前期多写其悠闲生活，后期多悲叹身世，情调感伤。形式上善用白描手法，自辟途径，语言清丽。论词强调协律，崇尚典雅，提出词“别是一家”之说，反对以作诗文之法作词。能诗，留存不多，部分篇章感时咏史，情辞慷慨，与其词风不同。</p>
+</body>
+</html>
